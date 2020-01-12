@@ -1,0 +1,33 @@
+
+.mail-container{
+    padding-left:12px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding-top: 20px;
+    box-shadow: 1px 2px 0px #00000036;
+    cursor: pointer;
+}
+
+.unread-mail{
+    font-weight: bold;
+}
+
+
+.subject{
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.body{
+    font-size: 13px;
+    margin-top:5px;
+}
+
+.from-name{
+    padding-left: 5px;
+}
+.from-container{
+    text-shadow: 0px 0.5px 0.5px #44657d;
+    margin-bottom: 5px;
+}

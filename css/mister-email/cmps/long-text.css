@@ -1,0 +1,34 @@
+.long-text-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.long-text-btn-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.long-text-btn-container button{
+    border-style: none;
+    background: none;
+    color: #464343c7;
+    outline: none;
+}
+.btn-starred{
+    font-size:22px;
+
+}
+
+.btn-read{
+    font-size: 20px;
+}
+
+.edit-btn-long-txt{
+    font-size: 25px;
+}
+
+.link-txt{
+    color: blue;
+}
+

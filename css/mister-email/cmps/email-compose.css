@@ -1,0 +1,79 @@
+.email-compose-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.email-compose-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f0f8ff9c;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+
+.new-msg{
+    background-color: #3f35359e;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+}
+
+.send-to{
+    padding: 7px;
+    font-family: Montserrat;
+    outline: none;
+}
+.subject-compose{
+    padding: 7px;
+    font-family: Montserrat;
+    outline: none;
+}
+.body-compose{
+    font-family: Montserrat;
+    outline: none;
+}
+.send-compose{
+    font-family: Montserrat;
+    border-style: none;
+    background-color: #fff;
+    border: 0.5px solid #0000004f;
+    padding: 5px;
+    outline: none;
+
+}
+
+.return-compose{
+    align-self: center;
+    border-style: none;
+    background: none;
+    text-shadow: 0 0 black;
+    color: #311258;
+    padding: 10px;
+    box-shadow: 1px 1px 4px #aba6a6;
+    font-family: Montserrat;
+    height: 35px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+
+.from-compose{
+    padding: 7px;
+    font-family: Montserrat;
+    outline: none;
+}
+
+@media(max-width:630px){
+    .email-compose-container{
+        position: absolute;
+        top: 150px;
+    }
+    .return-compose{
+        margin-top: 6px;
+    }
+}

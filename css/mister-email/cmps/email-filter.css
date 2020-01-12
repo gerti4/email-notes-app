@@ -1,0 +1,79 @@
+.email-filter-container{
+    padding: 15px;
+    position: absolute;
+    background-color: #ffffffbd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #414195; 
+    font-weight: bold;
+    top: -60px;
+    width: 100%;   
+
+}
+
+.email-search{
+    padding: 5px;
+    border-style: none;
+    box-shadow: 0px 1px 0px #5d95d4ba;
+    font-family: Montserrat;
+}
+
+.email-filter-container select{
+    width: 15%;
+    outline:none;
+    font-family: Montserrat;
+}
+
+
+.filter-container-big{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.filter-container-small{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.filter-container-small .email-search{
+    width: 32%;
+}
+
+.filter-container-small select{
+    width:32%;
+}
+
+.email-filter-container label{
+    cursor: pointer;
+}
+
+.email-filter-container > label{
+    color:#4c4999;
+    background-color: #fff;
+}
+
+
+
+.opt-filter{
+    color:#00b0ff;
+}
+
+@media(max-width:630px){
+    .email-filter-container{
+        top:-8%;
+        border-radius: 0;
+        box-shadow: 0px 2px 15px #91bada;
+        background: none;
+    }
+
+}
+
+
+

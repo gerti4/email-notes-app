@@ -1,0 +1,392 @@
+@import './miss-book/style.css';
+@import './mister-email/cmps/email-preview.css';
+@import './mister-email/cmps/email-compose.css';
+@import './mister-email/cmps/user-msg.css';
+@import './mister-email/cmps/email-app-header.css';
+@import './mister-email/pages/email-app.css';
+@import './mister-email/cmps/email-status.css';
+@import './mister-email/cmps/email-short-details.cmp.css';
+@import './mister-email/pages/email-list.css';
+@import './mister-email/cmps/email-filter.css';
+@import './mister-email/cmps/long-text.css';
+@import './mister-email/pages/email-details.css';
+@import './miss-keep/miss-keep.css';
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: MontserratBold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(../fonts/PlayfairDisplay-Italic.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img, iframe {
+    width: 100%;
+}
+
+p, h4 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+html {
+    font-family: Montserrat;
+}
+
+body {
+    background-image: url('../img/Hero.png');
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+nav {
+    max-width: 540px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.main-nav-btn {
+    display: none;
+}
+
+.main-nav-a {
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 6px 15px 6px 15px;
+}
+
+.main-nav-a.router-link-active {
+    background-color: #00b0ff;
+    color: white;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.main-area {
+    max-width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    z-index: 2;
+}
+
+.main-area img {
+    width: 50%;
+}
+
+.logo {
+    font-family: MontserratBold;
+    font-size: 34px;
+    font-weight: 1900;
+    letter-spacing: -1.03px;
+    padding-left: 5px;
+    text-shadow: 0 3px 15px rgba(0, 0, 0, 0.64);
+}
+
+.main-home-page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-sentence {
+    font-family: PlayfairDisplay;
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.sec-sentence {
+    font-family: PlayfairDisplay;
+    font-size: 24px;
+    text-shadow: 0 3px 15px rgba(0, 0, 0, 0.64);
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 100px;
+    font-weight: 400;
+}
+
+.main-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card-a {
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    width: 270px;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+}
+.main-card-a div{
+padding-top: 40px;
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 30px;
+}
+
+.main-card-a:not(:first-child) {
+    margin-left: 20px;
+}
+
+.main-card-a h3 {
+    margin: 0;
+    display: inline;
+}
+
+.main-footer {
+    height: 150px;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-footer li {
+    line-height: 34px;
+}
+
+.main-footer ul {
+    margin-top: 25px;
+    margin-right: 50px;
+}
+
+.wave-col {
+    margin-top: 39px;
+    height: 108px;
+    width: 19px;
+}
+
+.about-sentence {
+    text-align: center;
+    opacity: 0.5;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main-about-container {
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-about-container h3 {
+    width: 341px;
+    text-transform: uppercase;
+}
+
+.about-main-img {
+    width: 50%;
+    align-self: flex-end;
+}
+
+.main-about-container p {
+    width: 341px;
+    height: fit-content;
+    font-family: PlayfairDisplay;
+    font-size: 22px;
+    line-height: 38px;
+}
+
+.note-modal {
+    background-color: #00b0ff;
+    position: fixed;
+    height: 100px;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 960px) {
+    .container {
+        max-width: 740px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main-about-container {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .main-about-container h3 {
+        width: 100%;
+    }
+    .main-about-container p {
+        width: 100%;
+    }
+    .about-main-img {
+        width: 100%;
+    }
+    .sec-sentence {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:630px) {
+    nav {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        width: 150px;
+        background-color: rgba(255, 255, 255, 0.911);
+        height: 100vh;
+        top: 90px;
+        right: 0;
+        padding: 5px;
+        box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+        z-index: 10000000;
+    }
+    .main-nav-btn {
+        display: block;
+        /* height: 34px; */
+        align-self: center;
+        font-size: 34px;
+        margin-right: 10px;
+        background: none;
+        border: none;
+    }
+    .main-nav-a {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main-card-a {
+        margin-left: 0;
+        width: 85%;
+        height: fit-content;
+    }
+    .main-card-a:not(:first-child) {
+        margin-left: 0px;
+    }
+}
+
+/* helper */
+
+.flex {
+    display: flex;
+}
+
+.flex.align-center {
+    align-items: center;
+}
+
+/*---------------book------------------*/
+
+.book-details ul {
+    column-count: 0;
+}
+
+.book-details img {
+    width: 100%;
+    height: 330px;
+}
+
+.book-details-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.img-links-container {
+    text-align: center;
+}
+
+.next-prev {
+    display: flex;
+    flex-direction: row;
+}
+
+.book-details {
+    padding-top: 10px;
+    background-color: #5185ba3d;
+}
+
+.add-review form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 70%;
+}
+
+.review-input {
+    padding: 10px;
+    font-family: Montserrat;
+}
+
+.review-select {
+    padding: 10px;
+}
+
+.review-txtarea {
+    font-family: Montserrat;
+}
+
+.book-item-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-review {
+    padding: 10px;
+    border-style: none;
+    background-color: white;
+}
+
+.book-item-container {
+    display: flex;
+    align-self: flex-start;
+}

@@ -1,0 +1,61 @@
+.emails-short-details-container{
+    background-color: #90bbc559;
+    padding: 5px 10px 10px;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 1px solid #53474766;
+    position: relative;
+
+}
+
+.emails-short-details-container button{
+    background-color: none;
+    border-radius: 17px;
+    border-style: none;
+}
+
+.btn-short-details{
+    display: flex;
+    flex-direction: row;
+}
+
+.short-details-btn-p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.btn-short-details button{
+    background-color:#b5bbb900;
+    font-weight: bolder;
+    box-shadow: 0 0 black;
+    text-shadow: 0px 0px 1px white;
+    color: #030307e0;
+}
+
+.short-subject{
+    padding: 0;
+    margin: 0 0 5px;
+    font-size: 20px;
+}
+
+
+.email-note-details{
+    font-size: 15px;
+}
+
+.email-delete-details{
+    font-size: 20px;
+
+}
+
+.email-read-details{
+    font-size: 23px;
+    /* padding-top: 7.1px; */
+}
+
+.ignore-link{
+    color: #030307e0;
+}

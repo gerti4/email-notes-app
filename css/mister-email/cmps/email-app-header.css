@@ -1,0 +1,123 @@
+
+
+
+.email-app-header-container{
+    padding-right: 7%;
+    padding-left: 13px;
+}
+
+
+.email-app-header-container nav {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+
+.email-app-header-container nav a {
+    text-decoration: none;
+    /* color: black; */
+    font-size: large;
+    font-weight: 600;
+}
+
+
+.unread-mails-counter{
+    font-size: 14px;
+}
+
+.compose{
+    position: absolute;
+    top:108px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    left:5px;
+}
+
+.compose a{
+    text-decoration: none;
+    color: #414195;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.inbox-link:focus , .inbox-link:active{
+    color: #ffffff;
+    text-shadow: 0px -2px 5px #000000c2;;
+}
+.draft-link:focus , .draft-link:active{
+    color: #ffffff;
+    text-shadow: 0px -2px 5px #000000c2;;
+}
+.starred-link:focus , .starred-link:active{
+    color: #ffffff;
+    text-shadow: 0px -2px 5px #000000c2;;
+}
+
+.inbox-link{
+    cursor: pointer;
+    color:#341b4e
+}
+.draft-link{
+    cursor: pointer;
+    color:#341b4e
+}
+.starred-link{
+    cursor: pointer;
+    color:#341b4e
+}
+
+.links-small-header{
+    display: flex;
+    flex-direction: column;
+    background-color:#fffffff7;
+    position: absolute;
+    width: 50%;
+    top: 153px;
+    z-index: 1;
+    height: 170px;
+    justify-content: space-around;
+    left: 25%;
+    box-shadow: inset 1px 1px 85px #00b0ff;
+}
+
+.cover-links{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: none;
+    height: 100vh;
+    z-index: 1;
+}
+
+
+
+
+.menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 105px;
+    left: 47%;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 1;
+    color: #3785cd;
+    text-shadow: 0px 2px 6px white;
+}
+
+
+.links-small-header a{
+    color: #011c32;
+
+}
+
+
+
+.inbox-link-first{
+    color: #ffffff;
+    text-shadow: 0px -2px 5px #000000c2;;
+}
